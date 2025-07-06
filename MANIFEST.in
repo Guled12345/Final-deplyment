@@ -1,0 +1,13 @@
+include app_desktop.py
+include *.md
+include *.txt
+recursive-include .streamlit *.toml
+recursive-include data *.pkl *.json
+recursive-include utils *.py
+recursive-include database *.py
+recursive-include pages *.py
+exclude *.pyc
+exclude __pycache__
+exclude .git*
+exclude .replit*
+exclude *.tar.gz

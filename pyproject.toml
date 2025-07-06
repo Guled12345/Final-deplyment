@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eduscan-somalia"
+version = "1.0.0"
+description = "Learning Risk Assessment Application for Somalia"
+authors = [
+    {name = "EduScan Somalia Team", email = "support@eduscan-somalia.edu"}
+]
+license = {text = "Educational Use"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.28.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.3.0",
+    "plotly>=5.15.0",
+    "psycopg2-binary>=2.9.0",
+    "sqlalchemy>=2.0.0",
+    "setuptools>=80.9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/eduscan-somalia"
+Repository = "https://github.com/your-username/eduscan-somalia"
+
+[tool.setuptools]
+packages = ["utils", "database"]
+package-dir = {"" = "."}
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md", "*.json", "*.pkl", "*.toml"]
